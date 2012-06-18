@@ -11,7 +11,7 @@ switch (conf::get('APPLICATION_ENV'))
 	case 'loadrunner':
 		conf::set('MYSQL_SERVER', '192.168.0.1:3306');
 		conf::set('MYSQL_USERNAME', 'mysql');
-		conf::set('MYSQL_PASSWORD', 'abcd1234');
+		conf::set('MYSQL_PASSWORD', '??????????');
 		conf::set('MYSQL_DATABASE', 'okapi.bancbox');
 		break;
 	default:

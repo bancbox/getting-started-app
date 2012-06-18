@@ -21,8 +21,8 @@ conf::set('SESSION_DEFAULT_LIFE', 432000);//seconds
 switch (conf::get('APPLICATION_ENV'))
 {
 	case 'live':
-		conf::set('DEFAULT_EMAIL_TO', 'contact@bancbox.com');
-		conf::set('DEFAULT_EMAIL_FROM', 'no-reply@bancbox.com');
+		conf::set('DEFAULT_EMAIL_TO', '????????');
+		conf::set('DEFAULT_EMAIL_FROM', 'no-reply@????????');
 		
 		conf::set('SMTP_SERVER', 'smtp.sendgrid.net');
 		conf::set('SMTP_SERVER_PORT', 587);
@@ -35,19 +35,19 @@ switch (conf::get('APPLICATION_ENV'))
 		conf::set("BANCBOX_API_SUBSCRIBER_ID", "");
 		break;
 	case 'loadrunner':
-		conf::set('DEFAULT_EMAIL_TO', 'danut@weednet.ro');
-		conf::set('DEFAULT_EMAIL_FROM', 'danut@weednet.ro');
+		conf::set('DEFAULT_EMAIL_TO', '?????????');
+		conf::set('DEFAULT_EMAIL_FROM', '?????????');
 		
 	//	conf::set('SMTP_SERVER', '192.168.110.6');
 		
 		conf::set('BANCBOX_API_WDSL', 'https://sandbox-api.bancbox.com/BBXPort?wsdl');
-		conf::set("BANCBOX_API_USERNAME", "dan.chereches@okapidev.com");
-		conf::set("BANCBOX_API_PASSWORD", "BB-284165");
-		conf::set("BANCBOX_API_SUBSCRIBER_ID", "202157");
+		conf::set("BANCBOX_API_USERNAME", "???????");
+		conf::set("BANCBOX_API_PASSWORD", "???????");
+		conf::set("BANCBOX_API_SUBSCRIBER_ID", "?????");
 		break;
 	default:
-		conf::set('DEFAULT_EMAIL_TO', 'dan.chereches@okapidev.com');
-		conf::set('DEFAULT_EMAIL_FROM', 'dan.chereches@okapidev.com');
+		conf::set('DEFAULT_EMAIL_TO', '??????????');
+		conf::set('DEFAULT_EMAIL_FROM', '?????????');
 		
 		conf::set('SMTP_SERVER', '192.168.110.6');
 		
