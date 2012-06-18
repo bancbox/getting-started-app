@@ -1,0 +1,1 @@
+<?= helper\html_response($data) ?>

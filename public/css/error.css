@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 20px;
+	background: #FFFFFF;
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	text-align: left;
+}
+ul {
+	list-style-type: none;
+}
+h1 {
+	margin: 20px 0;
+	color: #CCCCCC;
+	font-size: 6em;
+}
+div.message {
+	margin: 20px 0;
+	padding: 10px;
+	background: #DDDDDD;
+	color: #444444;
+	font-size: 2em;
+}
+ul.trace {
+	margin: 20px 0;
+	padding: 5px 0;
+	background: #EEEEEE;
+	color: #888888;
+	font-size: 1.46em;
+}
+ul.trace li {
+	margin: 0;
+	padding: 0 10px;
+	background: #EEEEEE;
+	line-height: 36px;
+}
+ul.trace li em {
+	color: #000;
+	font-family: Consolas, sans-serif;
+	font-style: normal;
+}
+ul.trace li.arg {
+	margin: 5px 10px 5px 30px;
+	padding: 0 10px;
+	background: #DDDDDD;
+	font-size: 0.8em;
+}
+ul.trace li.arg em {
+	color: #444;
+}

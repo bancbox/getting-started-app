@@ -1,0 +1,24 @@
+body {
+	width: auto;
+	height: auto;
+}
+
+.modal-body {
+	position: relative;
+	max-height: 410px;
+	padding-bottom: 30px;
+}
+/*
+.modal-footer {
+	bottom: 15px;
+	position: absolute;
+	width: 560px;
+	margin-top: 0;
+}
+*/
+.modal-body {
+	overflow: hidden;
+}
+.modal {
+	margin: -200px 0 0 -200px;
+}

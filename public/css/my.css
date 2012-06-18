@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/*
+.modal {
+	top: 65%;
+}
+*/
+.image-frame img {
+	max-width: none;
+}
+.invite-request td {
+	padding: 3px 0 5px 0;
+}
+.width45 {
+	width: 45px
+}
+.modal-footer {
+	width: 100%;
+}
+.modal-body .sent-email {
+	font-size: 32px;
+}

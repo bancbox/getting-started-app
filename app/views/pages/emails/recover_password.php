@@ -1,0 +1,1 @@
+click <a href="<?= $link ?>">here</a> to set a new password

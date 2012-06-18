@@ -1,0 +1,31 @@
+# mod_rewrite
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# BREAK ROUTE
+
+RewriteRule ^proxy.php$ $0 [L,QSA]
+
+# exceptions
+
+RewriteRule ^robots.txt|crossdomain.xml|favicon.ico$ $0 [L,QSA]
+
+# static folders
+
+RewriteRule ^(css|js|images|font|files)($|/.*) $0 [L,QSA]
+
+# info app
+
+RewriteCond $0 ^(about|contact)\.html$
+RewriteRule .* info/$0 [L,QSA]
+
+
+# default app
+
+RewriteCond $0 !^(default|admin|auto)($|/)
+RewriteRule .* default/$0 [L,QSA]
+
+# MAIN ROUTE
+
+RewriteRule ^(([a-z0-9\-_]+)/?(([a-z0-9\-_]+)/?([a-z0-9\-_]+)?)?)?(\.([a-z0-9-_]{1,12}))?$ proxy.php?app=$2&controller=$4&action=$5&extension=$7 [L,QSA,NC]
